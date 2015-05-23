@@ -52,6 +52,7 @@
     <Compile Include="Filtering\MaskContext.cs" />
     <Compile Include="Filtering\Pixel.cs" />
     <Compile Include="Filtering\Vector2.cs" />
+    <Compile Include="Filtering\VmfFilter.cs" />
     <Compile Include="Loaders\ImageLoader.cs" />
     <Compile Include="Parsers\Arguments.cs" />
     <Compile Include="Parsers\ArgumentsParser.cs" />
