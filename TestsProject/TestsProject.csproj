@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{18E28B69-F192-4788-97F1-8719FCDA1715}</ProjectGuid>
+    <ProjectGuid>{D58FC63D-0038-40B5-84C5-7D84F922B791}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestsProject</RootNamespace>
@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FakeItEasy">
-      <HintPath>..\packages\FakeItEasy.1.25.2\lib\net40\FakeItEasy.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -57,16 +54,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ColorExtensionsTests.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MedianVectorFilter\MedianVectorFilter.csproj">
+    <ProjectReference Include="..\VectorMedianFilter\VectorMedianFilter.csproj">
       <Project>{290e5218-3ad2-48a9-b257-95ad5eeb4180}</Project>
-      <Name>MedianVectorFilter</Name>
+      <Name>VectorMedianFilter</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

@@ -1,7 +1,6 @@
 ﻿namespace TestsProject
 {
     using System.Drawing;
-    using MedianVectorFilter;
     using MedianVectorFilter.Extensions;
     using NUnit.Framework;
 
