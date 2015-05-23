@@ -29,7 +29,7 @@
 
         private static MaskContext CreateMaskContextForPixel(Bitmap bitmap, Mask mask, Pixel pixel)
         {
-            var offset = mask.Size - 2;
+            var offset = (mask.Size -1) / 2;
 
             var pixels = new List<Pixel> { pixel };
 
