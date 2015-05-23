@@ -1,17 +1,16 @@
-﻿namespace MedianVectorFilter
+﻿namespace MedianVectorFilter.Factories
 {
     using System;
+    using Filtering;
 
-    public class Mask
+    public static class MaskFactory
     {
-        public int Size { get; private set; }
-
-        public Mask(int size)
+        public static Mask CreateMask(int size)
         {
             if (size <= 1 || size % 2 == 0)
                 throw new ArgumentOutOfRangeException("size", "Mask size must be greater than 1 and odd number.");
 
-            Size = size;
+            return new Mask(size);
         }
     }
 }

@@ -4,22 +4,24 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Drawing;
+    using Extensions;
+    using Factories;
+    using Filtering;
+    using Loaders;
+    using Parsers;
 
     class Program
     {
         static void Main(string[] args)
         {
-            var pictureFilename = args.First();
-            var maskSize = Convert.ToInt32(args.Skip(1).First());
+            var arguments = ArgumentsParser.Parse(args);
 
-            var mask = new Mask(maskSize);
+            var mask = MaskFactory.CreateMask(arguments.MaskSize);
+            var bitmap = ImageLoader.LoadAsBitmap(arguments.PictureFilename);
 
-            var picture = Image.FromFile(pictureFilename);
-            var originalPicture = new Bitmap(picture);
+            ApplyFilter(bitmap, mask);
 
-            ApplyFilter(originalPicture, mask);
-
-            originalPicture.Save(Guid.NewGuid() + ".png");
+            bitmap.Save(String.Format("{0}_{1}x{2}_VMF.png", arguments.PictureFilenameWithoutExtension, arguments.MaskSize, arguments.MaskSize));
         }
 
         private static void ApplyFilter(Bitmap bitmap, Mask mask)

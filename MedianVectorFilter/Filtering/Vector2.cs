@@ -1,4 +1,4 @@
-﻿namespace MedianVectorFilter
+﻿namespace MedianVectorFilter.Filtering
 {
     public class Vector2
     {

@@ -1,4 +1,4 @@
-﻿namespace MedianVectorFilter
+namespace MedianVectorFilter.Extensions
 {
     using System;
     using System.Drawing;
