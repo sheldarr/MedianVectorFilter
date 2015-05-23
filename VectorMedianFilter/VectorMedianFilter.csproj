@@ -7,8 +7,8 @@
     <ProjectGuid>{290E5218-3AD2-48A9-B257-95AD5EEB4180}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MedianVectorFilter</RootNamespace>
-    <AssemblyName>MedianVectorFilter</AssemblyName>
+    <RootNamespace>VectorMedianFilter</RootNamespace>
+    <AssemblyName>VectorMedianFilter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
