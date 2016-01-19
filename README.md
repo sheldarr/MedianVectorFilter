@@ -1,13 +1,17 @@
-# VectorMedianFilter
+# Vecto Median Filter
 
-How to use <br />
-Invoke VectorMedianFilter.exe with two parameters filename and  maskSize <br />
+## Description
 
-Result will be saved in png file. <br />
+.NET implementation of Vector Median Filter.
 
-Examples <br />
-VectorMedianFilter.exe zaba.jpg 3 <br />
+## How to use
+Invoke VectorMedianFilter.exe with two parameters filename and  maskSize  
 
-Constraints <br />
-Mask size must be an odd number greater than 2 e.g. 3, 5, 7. <br />
-For mask size greater than 3 the calculation can take few minutes (depends on image size). <br />
+Result will be saved in png file.  
+
+## Examples
+VectorMedianFilter.exe zaba.jpg 3  
+
+## Constraints
+Mask size must be an odd number greater than 2 e.g. 3, 5, 7.  
+For mask size greater than 3 the calculation can take few minutes (depends on image size).
