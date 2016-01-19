@@ -1,4 +1,4 @@
-# Vecto Median Filter
+# Vector Median Filter
 
 ## Description
 
